@@ -1,6 +1,6 @@
 package org.yg.algorithm.leetcode;
 
-public class Leetcode707 {
+public class LeetCode707 {
 
     public static class ListNode {
         int val;

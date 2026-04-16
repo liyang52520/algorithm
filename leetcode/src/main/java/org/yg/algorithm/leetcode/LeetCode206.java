@@ -1,11 +1,6 @@
 package org.yg.algorithm.leetcode;
 
-import com.sun.tools.javac.util.List;
-
-import java.util.Arrays;
-import java.util.Stack;
-
-public class Leetcode206 {
+public class LeetCode206 {
 
     public static class ListNode {
         int val;

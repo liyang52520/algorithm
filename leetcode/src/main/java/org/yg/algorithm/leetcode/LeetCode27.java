@@ -2,7 +2,7 @@ package org.yg.algorithm.leetcode;
 
 import java.util.Arrays;
 
-public class Leetcode27 {
+public class LeetCode27 {
 
     public static class Solution {
         public int removeElement(int[] nums, int val) {

@@ -2,7 +2,7 @@ package org.yg.algorithm.leetcode;
 
 import java.util.Arrays;
 
-public class Leetcode59 {
+public class LeetCode59 {
 
     public static class Solution {
         public int[][] generateMatrix(int n) {
