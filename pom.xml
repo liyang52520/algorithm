@@ -12,6 +12,7 @@
     <modules>
         <module>leetcode</module>
         <module>kamacoder</module>
+        <module>common</module>
     </modules>
 
 </project>
