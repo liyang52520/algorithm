@@ -22,7 +22,7 @@ public class LeetCode144 {
             this.left = left;
             this.right = right;
         }
-    }*
+    }
 
     public static class Solution {
         public List<Integer> preorderTraversal(TreeNode root) {
