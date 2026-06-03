@@ -8,22 +8,22 @@ public class KMP {
      * 寻找 pattern 字符串在 s 中出现的索引
      *
      * @param s       源字符串
-     * @param pattern 目标字符串（模式）
+     * @param p 目标字符串（模式）
      * @return 索引位置，如果未找到返回 -1
      */
-    public static int indexOf(String s, String pattern) {
+    public static int indexOf(String s, String p) {
         // 先去除最基本的边界情况
-        if (s == null || s.isEmpty() || pattern == null || pattern.isEmpty() || s.length() < pattern.length()) {
+        if (s == null || s.isEmpty() || p == null || p.isEmpty() || s.length() < p.length()) {
             return -1;
         }
 
         // 计算得到 next 数组
-        int[] next = getNextArrayForKMP(pattern);
+        int[] next = getNextArrayForKMP(p);
 
         System.out.println(Arrays.toString(next));
 
         // 基于 next 数组进行匹配
-        int n = s.length(), m = pattern.length();
+        int n = s.length(), m = p.length();
 //        int i = 0, j = 0;
 //        while (i < n && j < m) {
 //            if (j == -1 || s.charAt(i) == pattern.charAt(j)) {
@@ -42,10 +42,10 @@ public class KMP {
         // j 代表已经匹配的长度
         int j = 0;
         for (int i = 0; i < n; i++) {
-            while (j != -1 && s.charAt(i) != pattern.charAt(j)) {
+            while (j != -1 && s.charAt(i) != p.charAt(j)) {
                 j = next[j];
             }
-            if (j == -1 || s.charAt(i) == pattern.charAt(j)) {
+            if (j == -1 || s.charAt(i) == p.charAt(j)) {
                 j++;
             }
             if (j == m) {
